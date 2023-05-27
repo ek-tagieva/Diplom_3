@@ -4,14 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32082ee-b857-4032-af76-05259dcc3916" name="Changes" comment="" />
+    <list default="true" id="c32082ee-b857-4032-af76-05259dcc3916" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/client/RestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/ConstructorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/EntrancePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/PasswordRecoveryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/PersonalAreaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/pojo/UserRegistrationPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/IngredientsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/PersonalAreaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/UserLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/UserRegistrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,9 +59,118 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/kate/Diplom/Diplom_3/src/test/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UserRegistrationTest.errorPasswordUserRegistration">
+    <configuration name="PersonalAreaTest.transitionFromPersonalAccountToDesigner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.PersonalAreaTest" />
+      <option name="METHOD_NAME" value="transitionFromPersonalAccountToDesigner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonalAreaTest.transitionFromPersonalAccountToStellarBurgers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.PersonalAreaTest" />
+      <option name="METHOD_NAME" value="transitionFromPersonalAccountToStellarBurgers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLoginTest.loginThroughButtonInPasswordRecoveryFormChrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.UserLoginTest" />
+      <option name="METHOD_NAME" value="loginThroughButtonInPasswordRecoveryFormChrome" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLoginTest.loginThroughButtonInPasswordRecoveryFormYandex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.UserLoginTest" />
+      <option name="METHOD_NAME" value="loginThroughButtonInPasswordRecoveryFormYandex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegistrationTest.errorPasswordUserRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.UserRegistrationTest" />
+      <option name="METHOD_NAME" value="errorPasswordUserRegistration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserRegistrationTest.errorPasswordUserRegistration" />
+        <item itemvalue="JUnit.UserLoginTest.loginThroughButtonInPasswordRecoveryFormChrome" />
+        <item itemvalue="JUnit.UserLoginTest.loginThroughButtonInPasswordRecoveryFormYandex" />
+        <item itemvalue="JUnit.PersonalAreaTest.transitionFromPersonalAccountToStellarBurgers" />
+        <item itemvalue="JUnit.PersonalAreaTest.transitionFromPersonalAccountToDesigner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
