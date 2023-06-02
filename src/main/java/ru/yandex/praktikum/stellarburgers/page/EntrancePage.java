@@ -1,7 +1,6 @@
 package ru.yandex.praktikum.stellarburgers.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 public class EntrancePage { // Страница Вход
     private WebDriver driver;
     private final By emailField = By.xpath(".//fieldset[1]/div/div/input[@class='text input__textfield text_type_main-default' and @name='name']");
@@ -10,9 +9,8 @@ public class EntrancePage { // Страница Вход
     private final By registerLink = By.xpath(".//p[1]/a[@class='Auth_link__1fOlj' and text()= 'Зарегистрироваться']");
     private final By restorePasswordLink = By.xpath(".//p[2]/a[@class='Auth_link__1fOlj' and text()= 'Восстановить пароль']");
     private final By textInput = By.xpath("//*[@id=\"root\"]/div/main/div/h2");
-
+    private final String loginPageUrl = "https://stellarburgers.nomoreparties.site/login";
     public EntrancePage(WebDriver driver) {
-
         this.driver = driver;
     }
     public void loginFields(String email, String password){
@@ -22,17 +20,8 @@ public class EntrancePage { // Страница Вход
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(loginButton).click();
     }
-
-    public void clickRestorePasswordLink(){
-
-        driver.findElement(restorePasswordLink).click();
-    }
-    public void clickRegisterLink(){
-
-        driver.findElement(registerLink).click();
-    }
-    public String getTextInput(){
-
-        return driver.findElement(textInput).getText();
-    }
+    public void clickRestorePasswordLink(){driver.findElement(restorePasswordLink).click();}
+    public void clickRegisterLink(){driver.findElement(registerLink).click();}
+    public String getTextInput(){return driver.findElement(textInput).getText();}
+    public String getLoginPageUrl(){return loginPageUrl;}
 }
