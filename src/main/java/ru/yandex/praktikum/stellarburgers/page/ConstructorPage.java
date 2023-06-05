@@ -1,32 +1,40 @@
 package ru.yandex.praktikum.stellarburgers.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
 public class ConstructorPage { // Страница Конструктор
     private WebDriver driver;
-    private final By bunSection = By.xpath(".//div[@style='display: flex;']/div[1]/span");
-    private final By saucesSection = By.xpath(".//div[@style='display: flex;']/div[2]/span");
-    private final By stuffingSection = By.xpath(".//div[@style='display: flex;']/div[3]/span");
+    private final By bunTab = By.xpath(".//div[1][@class='tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect']");
+    private final By saucesTab = By.xpath(".//div[2][@class='tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect']");
+    private final By stuffingTab = By.xpath(".//div[3][@class='tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect']");
     private final By textAssembleBurger = By.xpath(".//section[1]/h1[@class='text text_type_main-large mb-5 mt-10' and text()= 'Соберите бургер']");
-    private final By textBun = By.xpath(".//h2[@class='text text_type_main-medium mb-6 mt-10'][1]");
-    private final By textSauces = By.xpath(".//h2[@class='text text_type_main-medium mb-6 mt-10'][2]");
-    private final By textStuffing = By.xpath(".//div[@style='display: flex;']/div[3]/span");
     public ConstructorPage(WebDriver driver){
         this.driver = driver;
     }
-    public void clickBunSection(){driver.findElement(bunSection).click();}
-    public void clickSaucesSection(){driver.findElement(saucesSection).click();}
-    public void clickStuffingSection(){driver.findElement(stuffingSection).click();}
+    public void clickBunTab(){
+        driver.findElement(bunTab).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+    public void clickSaucesTab(){
+        driver.findElement(saucesTab).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+    public void clickStuffingTab(){
+        driver.findElement(stuffingTab).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+    public String getBunSectionClass(){
+        WebElement bunSection = driver.findElement(By.xpath(".//div[1][contains(@class, 'tab_tab__1SPyG')]"));
+        return bunSection.getAttribute("class");
+    }
+    public String getSaucesSectionClass(){
+        WebElement saucesSection = driver.findElement(By.xpath(".//div[2][@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']"));
+        return saucesSection.getAttribute("class");
+    }
+    public String getStuffingSectionClass(){
+        WebElement stuffingSection = driver.findElement(By.xpath(".//div[3][@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']"));
+        return stuffingSection.getAttribute("class");
+    }
     public String getTextAssembleBurger(){return driver.findElement(textAssembleBurger).getText();}
-    public String getTextBun(){
-        String text = driver.findElement(textBun).getText();
-        return text;
-    }
-    public String getTextSauces(){
-        String text = driver.findElement(textSauces).getText();
-        return text;
-    }
-    public String getTextStuffing(){
-        String text = driver.findElement(textStuffing).getText();
-        return text;
-    }
 }

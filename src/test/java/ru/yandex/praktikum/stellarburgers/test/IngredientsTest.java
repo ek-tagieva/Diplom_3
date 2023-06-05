@@ -11,42 +11,40 @@ import ru.yandex.praktikum.stellarburgers.page.MainPage;
 import static org.junit.Assert.assertEquals;
 public class IngredientsTest {
     private WebDriver driver;
+    private String expectedActiveSection = "tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect";
     @Before
     public void setUp(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://stellarburgers.nomoreparties.site/");
-    }
-    @Test
-    @DisplayName("Переход к разделу начинки")
-    public void goToStuffingSection(){
         MainPage objMainPage = new MainPage(driver);
         objMainPage.generalAction();
-        ConstructorPage objConstructorPage = new ConstructorPage(driver);
-        objConstructorPage.clickStuffingSection();
-        assertEquals("Начинки", objConstructorPage.getTextStuffing());
-    }
-    @Test
-    @DisplayName("Переход к разделу соусы")
-    public void goToSaucesSection(){
-        MainPage objMainPage = new MainPage(driver);
-        objMainPage.generalAction();
-        ConstructorPage objConstructorPage = new ConstructorPage(driver);
-        objConstructorPage.clickSaucesSection();
-        assertEquals("Соусы", objConstructorPage.getTextSauces());
     }
     @Test
     @DisplayName("Переход к разделу булки")
     public void goToBunSection(){
-        MainPage objMainPage = new MainPage(driver);
-        objMainPage.generalAction();
         ConstructorPage objConstructorPage = new ConstructorPage(driver);
-        objConstructorPage.clickSaucesSection();
-        objConstructorPage.clickBunSection();
-        assertEquals("Булки", objConstructorPage.getTextBun());
+        objConstructorPage.clickSaucesTab();
+        objConstructorPage.clickBunTab();
+        String actualActiveSection = objConstructorPage.getBunSectionClass();
+        assertEquals(expectedActiveSection, actualActiveSection);
+    }
+    @Test
+    @DisplayName("Переход к разделу соусы")
+    public void goToSaucesSection(){
+        ConstructorPage objConstructorPage = new ConstructorPage(driver);
+        objConstructorPage.clickSaucesTab();
+        String actualActiveSection = objConstructorPage.getSaucesSectionClass();
+        assertEquals(expectedActiveSection, actualActiveSection);
+    }
+    @Test
+    @DisplayName("Переход к разделу начинки")
+    public void goToStuffingSection(){
+        ConstructorPage objConstructorPage = new ConstructorPage(driver);
+        objConstructorPage.clickStuffingTab();
+        String actualActiveSection = objConstructorPage.getStuffingSectionClass();
+        assertEquals(expectedActiveSection, actualActiveSection);
     }
     @After
-    public void teardown() {
-        driver.quit();
-    }
+    public void teardown(){driver.quit();}
 }

@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32082ee-b857-4032-af76-05259dcc3916" name="Changes" comment="first commit">
+    <list default="true" id="c32082ee-b857-4032-af76-05259dcc3916" name="Changes" comment="fix commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/client/RestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/client/UserClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/ConstructorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/ConstructorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/EntrancePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/EntrancePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/PasswordRecoveryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/PasswordRecoveryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/PersonalAreaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/PersonalAreaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/page/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/pojo/UserRegistrationPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/stellarburgers/pojo/UserRegistrationPojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/IngredientsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/IngredientsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/PersonalAreaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/PersonalAreaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/UserLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/UserRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/yandex/praktikum/stellarburgers/test/UserRegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +64,38 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonalAreaTest.goToPersonalAccount">
+  <component name="RunManager" selected="JUnit.PersonalAreaTest.transitionFromPersonalAccountToStellarBurgers">
+    <configuration name="IngredientsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.IngredientsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IngredientsTest.goToStuffingSection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.IngredientsTest" />
+      <option name="METHOD_NAME" value="goToStuffingSection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersonalAreaTest.goToPersonalAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
@@ -92,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserLoginTest.loginThroughButtonInPasswordRecoveryForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonalAreaTest.transitionFromPersonalAccountToDesigner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -101,14 +121,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.UserLoginTest" />
-      <option name="METHOD_NAME" value="loginThroughButtonInPasswordRecoveryForm" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.PersonalAreaTest" />
+      <option name="METHOD_NAME" value="transitionFromPersonalAccountToDesigner" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserLoginTest.loginUsingLoginButtonMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonalAreaTest.transitionFromPersonalAccountToStellarBurgers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -117,39 +137,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.UserLoginTest" />
-      <option name="METHOD_NAME" value="loginUsingLoginButtonMainPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.UserRegistrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRegistrationTest.errorPasswordUserRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.yandex.praktikum.stellarburgers.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.yandex.praktikum.stellarburgers.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.UserRegistrationTest" />
-      <option name="METHOD_NAME" value="errorPasswordUserRegistration" />
+      <option name="MAIN_CLASS_NAME" value="ru.yandex.praktikum.stellarburgers.test.PersonalAreaTest" />
+      <option name="METHOD_NAME" value="transitionFromPersonalAccountToStellarBurgers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonalAreaTest.transitionFromPersonalAccountToStellarBurgers" />
+        <item itemvalue="JUnit.PersonalAreaTest.transitionFromPersonalAccountToDesigner" />
         <item itemvalue="JUnit.PersonalAreaTest.goToPersonalAccount" />
-        <item itemvalue="JUnit.UserRegistrationTest.errorPasswordUserRegistration" />
-        <item itemvalue="JUnit.UserRegistrationTest" />
-        <item itemvalue="JUnit.UserLoginTest.loginThroughButtonInPasswordRecoveryForm" />
-        <item itemvalue="JUnit.UserLoginTest.loginUsingLoginButtonMainPage" />
+        <item itemvalue="JUnit.IngredientsTest" />
+        <item itemvalue="JUnit.IngredientsTest.goToStuffingSection" />
       </list>
     </recent_temporary>
   </component>
@@ -181,11 +170,19 @@
       <option name="project" value="LOCAL" />
       <updated>1685220905325</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix commit">
+      <created>1685730309029</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685730309029</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="fix commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix commit" />
   </component>
 </project>
